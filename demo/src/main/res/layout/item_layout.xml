@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--app:paddingEnd="20dp"-->
+    <!--app:paddingStart="20dp"-->
+    <!--app:tabContentStart="@dimen/textandiconmargin"-->
+    <!--app:tabGravity="fill"-->
+    <!--app:tabMode="fixed"-->
+    <!--app:tabTextAppearance="@style/MyTabLayoutTextAppearanceInverse"-->
+    <!--/>-->
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#009688"
+        tl:tl_indicator_color="@color/colorPrimary"
+        tl:tl_indicator_height="2dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="#FFF"
+        tl:tl_tab_padding="8dp"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_underline_color="@color/colorPrimary"
+        tl:tl_underline_height="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
